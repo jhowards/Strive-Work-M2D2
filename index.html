@@ -68,13 +68,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       .navbar-nav {
         float: none;
         margin: 0 auto;
-
         text-align: center;
       }
 
       .iconify {
         color: black;
       }
+  
     </style>
   </head>
   <body>
@@ -114,13 +114,13 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
+            <a class="nav-link" href="#albums">Albums</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Albums</a>
+            <a class="nav-link" href="#review">Review</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reviews</a>
+            <a class="nav-link" href="#hallofshame">Hall of Shame</a>
           </li>
         </ul>
       </div>
@@ -171,7 +171,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 2 albums per row when you are on a small screen
         -->
 
-    <div class="container pt-5">
+    <div class="container pt-5" id="albums">
       <div class="container mb-3"><h2>Albums</h2></div>
       <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4">
         <div class="col mb-3">
@@ -409,7 +409,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - ... And whatever you think it's interesting about it!
         -->
 
-        <div class="container">
+        <div class="container" id="review">
             <div class="container mb-3"><h2>Album Reviews</h2></div>
             <div class="jumbotron border">
                 <div class="row">
@@ -437,14 +437,43 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                 <p class="mb-1">Genre: Alternative/Indie</p>
                 <p>Duration: 40:25</p>
                 <p>Two Door’s fourth effort is far from a wall-to-wall success, but for a band who could so easily continue to tread their affable, well-worn path around arenas and festival main stages without a sideward step (as many of their indie contemporaries have and will continue to do), the risks and experimentation here are very welcome.</p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <a class="btn btn-primary btn-lg" href="https://www.nme.com/reviews/two-door-cinema-club-false-alarm-2511210" role="button">Learn more</a>
               </div>
-        </div></div>
+        </div>
 
     <!-- EXERCISE 5
             Worst album list! Find out the music you don't really like or you find overrated and list it
             in this "hall of shame" chart!
         -->
+
+        <div class="container" id="hallofshame">
+            <div class="container mb-4"><h2>Hall of Shame - Worst Albums</h2></div>
+            <ul class="list-unstyled">
+                <li class="media">
+                  <img src="https://fakeimg.pl/75/" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Album 1</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, provident incidunt nulla aspernatur dolorum iure earum eum odit vero sequi necessitatibus similique quis! Tempore porro soluta quos fuga aliquam quaerat.</p>
+                  </div>
+                </li>
+                <li class="media my-4">
+                  <img src="https://fakeimg.pl/75/" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Album 2</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia et ex enim eaque est possimus sint, nobis laudantium sunt, quis optio! Inventore, atque. Officia quaerat repudiandae quis maxime. Tenetur, quasi.</p>
+                  </div>
+                </li>
+                <li class="media">
+                  <img src="https://fakeimg.pl/75/" class="mr-3" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1">Album 3</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam eum error modi, soluta nostrum quaerat qui voluptatem eligendi, voluptate, consequatur debitis illum iure quis facere delectus accusantium odit alias?</p>
+                  </div>
+                </li>
+              </ul>
+        </div>
+        
+    
 
     <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
@@ -476,5 +505,15 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
          EXERCISE 11
             Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
         -->
+        
+        <footer class="page-footer font-small special-color-dark pt-4"></footer>
+        <div class="container">
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                <a href="https://www.jameshoward.uk/"> James Sutcliffe</a>
+              </div>
+        </div>
+
+        </footer>
   </body>
+  
 </html>
