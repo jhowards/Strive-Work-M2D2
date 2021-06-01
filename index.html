@@ -35,7 +35,14 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <style>
       /* EXERCISE 1
             For every Album we'd like to have a consistent style.
@@ -64,6 +71,17 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       }
       .albumDuration {
       }
+
+      .navbar-nav {
+        float: none;
+        margin: 0 auto;
+
+        text-align: center;
+      }
+
+      .iconify {
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -82,8 +100,8 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page
         -->
+
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">My Album Showcase</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -111,7 +129,33 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         </ul>
       </div>
     </nav>
-    <h1>Hello World</h1>
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-">
+          <img
+            src="https://i.ibb.co/TqFLg4T/FQqi-K1-UP-400x400.jpg"
+            alt="FQqi-K1-UP-400x400"
+            class="img-thumbnail"
+          />
+        </div>
+        <div class="col-lg">
+          <h1>My Biography</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolores
+            quas. Rerum amet voluptatum omnis quasi, quos laborum culpa impedit
+            facere esse soluta suscipit similique unde laudantium neque tempore
+            eum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repellendus nostrum, nobis hic temporibus consequuntur error officia
+            dignissimos corrupti voluptatem rem necessitatibus non atque libero
+            nihil qui voluptas cum explicabo ad?
+          </p>
+        </div>
+      </div>
+    </div>
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
             In this section you should have:
@@ -119,6 +163,124 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+
+    <div class="container pt-5">
+      <div class="container mb-3"><h2>Albums</h2></div>
+      <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4">
+        <div class="col mb-4">
+          <div class="card text-white bg-dark mb-3">
+            <img
+              src="https://i.pinimg.com/originals/3a/f0/e5/3af0e55ea66ea69e35145fb108b4a636.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Starboy</h5>
+              <p class="card-text">The Weeknd</p>
+              <div class="container">
+                <a href="#" class="btn btn-primary mb-2"
+                  >Spotify
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:spotify"
+                    data-inline="false"
+                  ></span
+                ></a>
+                <a href="#" class="btn btn-primary mb-2"
+                  >Tidal
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:tidal"
+                    data-inline="false"
+                  ></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card text-white bg-dark mb-3">
+            <img src="https://fakeimg.pl/300/" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Starboy</h5>
+              <p class="card-text">The Weeknd</p>
+              <div class="container">
+                <a href="#" class="btn btn-primary mb-2"
+                  >Spotify
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:spotify"
+                    data-inline="false"
+                  ></span
+                ></a>
+                <a href="#" class="btn btn-primary mb-2"
+                  >Tidal
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:tidal"
+                    data-inline="false"
+                  ></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card text-white bg-dark mb-3">
+            <img src="https://fakeimg.pl/300/" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Starboy</h5>
+              <p class="card-text">The Weeknd</p>
+              <div class="container">
+                <a href="#" class="btn btn-primary mb-2"
+                  >Spotify
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:spotify"
+                    data-inline="false"
+                  ></span
+                ></a>
+                <a href="#" class="btn btn-primary mb-2"
+                  >Tidal
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:tidal"
+                    data-inline="false"
+                  ></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card text-white bg-dark mb-3">
+            <img src="https://fakeimg.pl/300/" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Starboy</h5>
+              <p class="card-text">The Weeknd</p>
+              <div class="container">
+                <a href="#" class="btn btn-primary mb-2"
+                  >Spotify
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:spotify"
+                    data-inline="false"
+                  ></span
+                ></a>
+                <a href="#" class="btn btn-primary mb-2"
+                  >Tidal
+                  <span
+                    class="iconify"
+                    data-icon="simple-icons:tidal"
+                    data-inline="false"
+                  ></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
